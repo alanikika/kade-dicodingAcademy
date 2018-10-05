@@ -5,7 +5,9 @@ import com.alanikika.pratyaksa.retreivingfromapi.BuildConfig
 
 object TheSportDBApi {
 
-    fun getTeam(league: String): String {
+    fun getTeams(league: String): String {
+
+        /*Menggunakan URI BUILDER untuk membentuk Endpoint*/
         return Uri.parse(BuildConfig.BASE_URL).buildUpon()
                 .appendPath("api")
                 .appendPath("v1")
